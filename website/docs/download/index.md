@@ -3,28 +3,23 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 3.3
+# Encore Tweaks 3.4
 
 ## Changelog
-- Migrate daemon code to C23 standard
-- Daemon code refactoring and optimizations
-- Memory management improvement for daemon
-- Implement branch prediction optimization for daemon
-- Workaround for inexact process name PID fetch
-- Change GPU and DRAM frequency without touching governor
-- Disable touchboost in the powersave profile to save more power
-- Fix Pojav Launcher can't be boosted by daemon due to the inexact process name
-- Fix invalid frequency value settings for non MediaTek GPUs, causing low frequency to be set in performance profile 
-- Fix random boost caused by Mobile Legends: Bang Bang (Huawei version)
-- Make sure new game session gets boosted when the old one killed
-- Force off FPSGO on performance profile
-- Lock value for CPU freq policies to make sure frequencies are static
-- Tweak more nodes of Snapdragon DRAM, CPU Bus and GPU Bus
-- Disable PPM policy `SYS_BOOST` by default to prevent buggy CPU freq behavior on some MediaTek devices
-
+- Massive project refactor and restructure
+- Added DRAM/Memory and CPU bus tweak for Exynos and Google Tensor
+- Disable PPM policy `SYS_BOOST` only on performance profile due causing weird CPU freq behavior on Redmi K40 Gaming
+- Optimize devfreq frequency functions
+- Remember WebUI language choice by user
+- Avoid repeated branch prediction miss on screen state and low battery fetch function
+- Don't stop playback media on DND mode due keyevent difference on each devices
+- Fix infinite loop due bad logic on gamestart check
+- Fix screen flicker and delay on Xiaomi Topaz and other Snapdragon devices
+- Fix random reboot on Realme 5i (again)
+- Fix random boost caused by Moba Legends (MLBB India version)
 
 ## Download
-- [Download](https://safefileku.com/download/JzsGXs12mmFqQfuL)
+- [Download](https://safefileku.com/download/qRbEXQwK1K8g290j)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -32,6 +27,7 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 3.3](/download/version/3.3)
 - [Version 3.2](/download/version/3.2)
 - [Version 3.1](/download/version/3.1)
 - [Version 3.0](/download/version/3.0)
