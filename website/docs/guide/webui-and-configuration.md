@@ -36,6 +36,3 @@ Edit the list of games and other performance-intensive applications. When these 
 
 ### Save Logs
 Save Encore daemon logs to internal storage, this log can help with troubleshooting.
-
-### Restart Service
-Restarts the Encore daemon to refresh the service if it encounters issues.

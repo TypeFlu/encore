@@ -3,23 +3,26 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 3.4
+# Encore Tweaks 3.5
 
 ## Changelog
-- Massive project refactor and restructure
-- Added DRAM/Memory and CPU bus tweak for Exynos and Google Tensor
-- Disable PPM policy `SYS_BOOST` only on performance profile due causing weird CPU freq behavior on Redmi K40 Gaming
-- Optimize devfreq frequency functions
-- Remember WebUI language choice by user
-- Avoid repeated branch prediction miss on screen state and low battery fetch function
-- Don't stop playback media on DND mode due keyevent difference on each devices
-- Fix infinite loop due bad logic on gamestart check
-- Fix screen flicker and delay on Xiaomi Topaz and other Snapdragon devices
-- Fix random reboot on Realme 5i (again)
-- Fix random boost caused by Moba Legends (MLBB India version)
+- Remove error-fallback `dumpsys` command for screenstate fetching due massive overhead.
+- Implement error fallback for batery saver state fetcher.
+- Fix shellcheck warnings for the project's shell script.
+- Minimize use of the `cat` command (UUOC).
+- Search for more default CPU governor candidates if device's default is `performance`.
+- Revert touch boost implementation.
+- Fix lag and touch delay in Xiaomi Ginkgo and other Xiaomi devices.
+- Update translation for Mandarin, Japanese, Arabic and German.
+- Drop "Restart Daemon" button due constant misuses and bugs associated.
+
+## Checksums
+- **MD5**: `2a765884e4a77dda6fb2978d2302b90d`
+- **SHA1**: `6fecca242622036bf723d9d00438cac1a94bf813`
+- **SHA256**: `b2a32b7c5e58bdcbbb9dbd7fb265887fe2052f23a56f6118df53d134ca9a24cb`
 
 ## Download
-- [Download](https://safefileku.com/download/qRbEXQwK1K8g290j)
+- [Download](https://safefileku.com/download/WpcTvu7DgaymBdcQ)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -27,6 +30,7 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 3.4](/download/version/3.4)
 - [Version 3.3](/download/version/3.3)
 - [Version 3.2](/download/version/3.2)
 - [Version 3.1](/download/version/3.1)
