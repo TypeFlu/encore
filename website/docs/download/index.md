@@ -3,26 +3,28 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 3.5
+# Encore Tweaks 3.6
 
 ## Changelog
-- Remove error-fallback `dumpsys` command for screenstate fetching due massive overhead.
-- Implement error fallback for batery saver state fetcher.
-- Fix shellcheck warnings for the project's shell script.
-- Minimize use of the `cat` command (UUOC).
-- Search for more default CPU governor candidates if device's default is `performance`.
-- Revert touch boost implementation.
-- Fix lag and touch delay in Xiaomi Ginkgo and other Xiaomi devices.
-- Update translation for Mandarin, Japanese, Arabic and German.
-- Drop "Restart Daemon" button due constant misuses and bugs associated.
+- Using native code "pgrep" implementation.
+- Make boot up faster.
+- Drop disable CPU core on powersave profile due device specific bug on Realme 5i and Infinix GT 10 Pro.
+- "Nerf" powersave profile, reduces device frequency to 50% (DVFS) instead of lowest frequency to reduce lags.
+- Add back DDR and Buses powersave tweaks.
+- Customizable MediaTek PPM policies via `/data/encore/ppm_policies_mediatek`.
+- Code refactor and optimizations.
+- Fix kernel panic and freeze on some devices while powersave profile enabled.
+- Fix typo causing integrity check unhandled error.
+- Fix performance dip on some MediaTek devices.
+- Other misc changes and optimizations.
 
 ## Checksums
-- **MD5**: `2a765884e4a77dda6fb2978d2302b90d`
-- **SHA1**: `6fecca242622036bf723d9d00438cac1a94bf813`
-- **SHA256**: `b2a32b7c5e58bdcbbb9dbd7fb265887fe2052f23a56f6118df53d134ca9a24cb`
+- **MD5**: `7dbd2062be56f5ef46eb45b9b5a7afa3`
+- **SHA1**: `e761f4858fc130be42e7b89d35820cf1ec7aacf3`
+- **SHA256**: `3df6d3761fea4733ef45f8b995b12a50bd0000c83c25506f4579da636c62f496`
 
 ## Download
-- [Download](https://safefileku.com/download/WpcTvu7DgaymBdcQ)
+- [Download](https://safefileku.com/download/H7shilh4st4pBZjB)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -30,6 +32,7 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 3.5](/download/version/3.5)
 - [Version 3.4](/download/version/3.4)
 - [Version 3.3](/download/version/3.3)
 - [Version 3.2](/download/version/3.2)
