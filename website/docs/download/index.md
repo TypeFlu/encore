@@ -3,28 +3,21 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 3.6
+# Encore Tweaks 3.7
 
 ## Changelog
-- Using native code "pgrep" implementation.
-- Make boot up faster.
-- Drop disable CPU core on powersave profile due device specific bug on Realme 5i and Infinix GT 10 Pro.
-- "Nerf" powersave profile, reduces device frequency to 50% (DVFS) instead of lowest frequency to reduce lags.
-- Add back DDR and Buses powersave tweaks.
-- Customizable MediaTek PPM policies via `/data/encore/ppm_policies_mediatek`.
-- Code refactor and optimizations.
-- Fix kernel panic and freeze on some devices while powersave profile enabled.
-- Fix typo causing integrity check unhandled error.
-- Fix performance dip on some MediaTek devices.
-- Other misc changes and optimizations.
+- Fix compatibility with ROMs with buggy mksh shell implementation (Non compliance or out-of-date).
+- Revert previous powersave tweaks due to buggy mksh implementation on some ROMs.
+- Fix unable to fetch PID errors.
+- Misc changes and optimizations.
 
 ## Checksums
-- **MD5**: `7dbd2062be56f5ef46eb45b9b5a7afa3`
-- **SHA1**: `e761f4858fc130be42e7b89d35820cf1ec7aacf3`
-- **SHA256**: `3df6d3761fea4733ef45f8b995b12a50bd0000c83c25506f4579da636c62f496`
+- **MD5**: `83353ed0f1b649a5ef752f7a726bb04e`
+- **SHA1**: `d8ee95884380b602736de746e59e2e2d521e34e3`
+- **SHA256**: `4f0f1e528cb0e029ecf82ba7dc7b77dbb4bac2abaefece20fcb63eda01a255c8`
 
 ## Download
-- [Download](https://safefileku.com/download/H7shilh4st4pBZjB)
+- [Download](https://safefileku.com/download/niwtVI271MMZlzcP)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -32,6 +25,7 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 3.6](/download/version/3.6)
 - [Version 3.5](/download/version/3.5)
 - [Version 3.4](/download/version/3.4)
 - [Version 3.3](/download/version/3.3)
