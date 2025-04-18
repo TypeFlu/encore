@@ -3,21 +3,26 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 3.7
+# Encore Tweaks 3.8
 
 ## Changelog
-- Fix compatibility with ROMs with buggy mksh shell implementation (Non compliance or out-of-date).
-- Revert previous powersave tweaks due to buggy mksh implementation on some ROMs.
-- Fix unable to fetch PID errors.
+- Ship our own mksh shell for compatibility across different devices and ROMs.
+- Fix screen blackout in powersave profile on Xiaomi Redwood and certain Snapdragon devices.
+- "Nerf" powersave profile, reduces device frequency to 50% (DVFS) instead of lowest frequency to reduce lags.
+- Add back DDR and Buses powersave tweaks.
+- Fix encore profiler stuck to perfomance on [Magic Chess](https://play.google.com/store/apps/details?id=com.mobilechess.gp).
+- Handle possible race condition on logging system.
+- Initial support for incoming Encore Addon.
 - Misc changes and optimizations.
 
 ## Checksums
-- **MD5**: `83353ed0f1b649a5ef752f7a726bb04e`
-- **SHA1**: `d8ee95884380b602736de746e59e2e2d521e34e3`
-- **SHA256**: `4f0f1e528cb0e029ecf82ba7dc7b77dbb4bac2abaefece20fcb63eda01a255c8`
+- **MD5**: `e1164dc21e42cf3b45be6419ad0eb35a`
+- **SHA1**: `279f4bde8cfb8468d6423f99aa3d6e0e04ae6df8`
+- **SHA256**: `09d07a1f80fc77c7965f55fdb32ee9356dc38c506f2d9f6be062f6c14ba8acce`
 
 ## Download
-- [Download](https://safefileku.com/download/niwtVI271MMZlzcP)
+- [Download](https://shrinkme.ink/rBbEYR)
+- [Download (Alternative link)](https://safefileku.com/download/NbKSRCWTOVxJkaZC)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -25,6 +30,7 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 3.7](/download/version/3.7)
 - [Version 3.6](/download/version/3.6)
 - [Version 3.5](/download/version/3.5)
 - [Version 3.4](/download/version/3.4)
