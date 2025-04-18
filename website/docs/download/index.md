@@ -3,26 +3,25 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 3.8
+# Encore Tweaks 3.9
 
 ## Changelog
-- Ship our own mksh shell for compatibility across different devices and ROMs.
-- Fix screen blackout in powersave profile on Xiaomi Redwood and certain Snapdragon devices.
-- "Nerf" powersave profile, reduces device frequency to 50% (DVFS) instead of lowest frequency to reduce lags.
-- Add back DDR and Buses powersave tweaks.
-- Fix encore profiler stuck to perfomance on [Magic Chess](https://play.google.com/store/apps/details?id=com.mobilechess.gp).
-- Handle possible race condition on logging system.
-- Initial support for incoming Encore Addon.
-- Misc changes and optimizations.
+- Fix performance issues on some Snapdragon devices.
+- Revert powersave profile tweaks (again).
+
+::: info Hotfix release
+This version is a hotfix to the prior release.
+for additional information, see the [previous release changelog](/download/version/3.8).
+:::
 
 ## Checksums
-- **MD5**: `e1164dc21e42cf3b45be6419ad0eb35a`
-- **SHA1**: `279f4bde8cfb8468d6423f99aa3d6e0e04ae6df8`
-- **SHA256**: `09d07a1f80fc77c7965f55fdb32ee9356dc38c506f2d9f6be062f6c14ba8acce`
+- **MD5**: `111f3a798ca6f5b7fa35d5586b5e5061`
+- **SHA1**: `f502b21846b067555ee309f2b933c57a0c78336e`
+- **SHA256**: `51e78d3b608596281121f760b51dbf5f67ff10416d7dedc23ad8a314dfc4735c`
 
 ## Download
-- [Download](https://shrinkme.ink/rBbEYR)
-- [Download (Alternative link)](https://safefileku.com/download/NbKSRCWTOVxJkaZC)
+- [Download](https://shrinkme.ink/daEPA)
+- [Download (Alternative link)](https://safefileku.com/download/JP6XADge6N4Xr166)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -30,6 +29,7 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 3.8](/download/version/3.8)
 - [Version 3.7](/download/version/3.7)
 - [Version 3.6](/download/version/3.6)
 - [Version 3.5](/download/version/3.5)
