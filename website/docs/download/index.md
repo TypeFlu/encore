@@ -3,25 +3,30 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 3.9
+# Encore Tweaks 4.0 RC1
 
 ## Changelog
-- Fix performance issues on some Snapdragon devices.
-- Revert powersave profile tweaks (again).
+- Drop mksh shell due buggy behavior on some devices.
+- Introduce lite mode.
+- Using native code to determine frequencies.
+- Introduce MediaTek DDR boost tweak.
+- Pick middle frequency relative to max frequency, not OPP index.
+- Skip CPU scaling tweaks entierly when PPM node exists.
+- Handle write conflict on logging system properly.
+- Other misc changes and optimizations.
 
-::: info Hotfix release
-This version is a hotfix to the prior release.
-for additional information, see the [previous release changelog](/download/version/3.8).
+::: tip Release Candidate
+This is a pre-release version of Encore Tweaks. It may contain bugs and is not guaranteed to be stable.
 :::
 
 ## Checksums
-- **MD5**: `111f3a798ca6f5b7fa35d5586b5e5061`
-- **SHA1**: `f502b21846b067555ee309f2b933c57a0c78336e`
-- **SHA256**: `51e78d3b608596281121f760b51dbf5f67ff10416d7dedc23ad8a314dfc4735c`
+- **MD5**: `6a22777e5b9663d9fd36fe6b53127a66`
+- **SHA1**: `127fd7a1681cb9f3dd8fcc662b6d4e7fe75c28e1`
+- **SHA256**: `aaf92c6868532031dc85325601d59236321dc1bffab1687c006b7af1a753d7d0`
 
 ## Download
-- [Download](https://shrinkme.ink/daEPA)
-- [Download (Alternative link)](https://safefileku.com/download/JP6XADge6N4Xr166)
+- [Download](https://safefileku.com/download/Jo8FCSXgUmADRCiA)
+- [Download (Alternative link)](https://1drv.ms/u/c/e6cc1154636ecaa3/EZBIBBSL6mVGrCffIobvMqABHib2364V7iJnclbTykTyvA)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -29,6 +34,7 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 3.9](/download/version/3.9)
 - [Version 3.8](/download/version/3.8)
 - [Version 3.7](/download/version/3.7)
 - [Version 3.6](/download/version/3.6)
