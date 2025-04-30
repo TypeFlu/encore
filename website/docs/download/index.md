@@ -3,30 +3,23 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 4.0 RC1
+# Encore Tweaks 4.0
 
 ## Changelog
 - Drop mksh shell due buggy behavior on some devices.
-- Introduce lite mode.
-- Using native code to determine frequencies.
 - Introduce MediaTek DDR boost tweak.
-- Pick middle frequency relative to max frequency, not OPP index.
 - Skip CPU scaling tweaks entierly when PPM node exists.
 - Handle write conflict on logging system properly.
 - Other misc changes and optimizations.
 
-::: tip Release Candidate
-This is a pre-release version of Encore Tweaks. It may contain bugs and is not guaranteed to be stable.
-:::
-
 ## Checksums
-- **MD5**: `6a22777e5b9663d9fd36fe6b53127a66`
-- **SHA1**: `127fd7a1681cb9f3dd8fcc662b6d4e7fe75c28e1`
-- **SHA256**: `aaf92c6868532031dc85325601d59236321dc1bffab1687c006b7af1a753d7d0`
+- **MD5**: `f8b42a3bf61fdd5b9ffb3ddbd2702fb9`
+- **SHA1**: `98354012f04ca9e0abca861a9736005d533127cc`
+- **SHA256**: `f77b40ea35a9f20208139ce3021b711209d09de253c0e6db9936594291618f04`
 
 ## Download
-- [Download](https://safefileku.com/download/Jo8FCSXgUmADRCiA)
-- [Download (Alternative link)](https://1drv.ms/u/c/e6cc1154636ecaa3/EZBIBBSL6mVGrCffIobvMqABHib2364V7iJnclbTykTyvA)
+- [Download](https://shrinkme.ink/563Hoa)
+- [Download (Alternative link)](https://safefileku.com/download/sWewuedrvgHHLIPB)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
