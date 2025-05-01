@@ -19,17 +19,17 @@ While KernelSU and APatch integrate WebUI natively in their managers, Magisk doe
 This option will stops the logger services and silence logs. Enable this option to reduces performance overhead.
 
 ::: warning
-Do NOT enable this option if you're testing ROMs or apps, as it will completely disable system logging. Software that depends on `logd` service will not working properly!
+Do NOT enable this option if you're testing ROMs or apps as it will completely disable system logging. Software that depends on `logd` service will not working properly!
 :::
 
 ### DND on Gameplay
 Enable do not disturb mode when playing games. limits interruptions from notifications and calls, allowing you to play your favorite games without any distraction.
 
 ### Default CPU Governor
-Select the default CPU governor for both "Normal" and "Powersave" profiles. The CPU governor determines power and performance trade-offs.
+Default CPU governor to be used on Normal profile. The CPU governor determines power and performance trade-offs.
 
 ### Powersave CPU Governor
-Choose the CPU governor specifically for the "Powersave" profile, which is optimized for battery life, by default this option will follow default CPU governor.
+Choose the CPU governor specifically for the Powersave profile, which is optimized for battery life, by default this option will follow default CPU governor.
 
 ### Edit Gamelist
 Edit the list of games and other performance-intensive applications. When these apps are active, Encore Tweaks will automatically apply the "Performance" profile.

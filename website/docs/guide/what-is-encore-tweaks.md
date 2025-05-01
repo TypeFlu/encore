@@ -6,28 +6,41 @@ description: "Encore Tweaks is an performance Magisk module designed to boost de
 # What is Encore Tweaks?
 Encore Tweaks is a Magisk Module created to enhance device performance during gaming sessions, while keeping battery life optimized for normal use. With **fully automatic performance profiles** and **wide compatibility** across various SoCs, Encore Tweaks adapts dynamically to boost your device's performance when it matters most.
 
-## Features
+## Why Encore Tweaks?
 
-- **Automatic Performance Profiles**: No need to manually adjust performance settings; Encore Tweaks automatically switches profiles based on app usage, allowing you to focus on what matters.
-- **Battery-Friendly Performance**: Encore Tweaks only activates performance scripts during gaming sessions, preserving battery life for everyday use. Encore Tweaks also can cut your power consumption on battery saver mode.
-- **Optimized for Popular SoCs**: Supports a wide range of System-on-Chips (SoCs), including Snapdragon, MediaTek, Exynos, Google Tensor, Tegra, and even Unisoc, with custom optimizations tailored for each.
-- **Lag-Free Gaming Experience**: By prioritizing resources for gaming apps, Encore Tweaks minimizes lag, jitter, and latency for smoother gameplay.
-- **Safe and Reliable**: With zero reported incidents of bootloops or bricked devices, Encore Tweaks is a trusted solution for performance optimization.
+### Automatic Performance Profiles
+No need to manually adjust performance settings; Encore Tweaks automatically switches profiles based on app usage, allowing you to focus on what matters.
+
+### Battery-Friendly Performance
+Encore Tweaks only activates performance scripts during gaming sessions, preserving battery life for everyday use. Encore Tweaks also can cut your power consumption on battery saver mode.
+
+### It Works Everywhere
+Encore Tweaks are compatible with any Android device, no matter how weird it is. Supporting Snapdragon, MediaTek, Exynos, Google Tensor, Tegra, and even Unisoc, with custom optimizations tailored for each.
+
+### Game-First Resource Allocation
+Encore Tweaks prioritizes gaming performance by allocating maximum CPU and I/O resources, ensuring lag-free gameplay.
+
+### Safe and Reliable
+With zero reported incidents of bootloops or bricked devices, Encore Tweaks is a trusted solution for performance optimization.
 
 ## How Encore Tweaks Works
 Encore Tweaks works like a automated profiling system, it's dynamically adjusts your device's performance based on real-time data, such as the currently running app, screen state (awake or not), and battery saver mode. Using this information, it seamlessly switches between different profiles to optimize performance or save power as needed.
 
 ### Profiles Overview
 
-#### **Performance Profile**
+#### Performance Profile
 - **Activation**: Automatically enabled when an app or game listed in the **Gamelist** is launched and screen was awake.  
-- **Purpose**: Ensures maximum responsiveness and stability during intensive tasks. Sets **CPU**, **GPU**, and **DRAM** frequencies to their highest operating points (OPP) and prioritizes **CPU** and **I/O** resources for Game to minimize lag and jitter.  
+- **Purpose**: Ensures maximum responsiveness and stability during intensive tasks. Sets **CPU**, **GPU**, and **DRAM** frequencies to their highest frequency and prioritizes **CPU** and **I/O** resources for Game to minimize lag and jitter.  
 
-#### **Powersave Profile**
+---
+
+#### Powersave Profile
 - **Activation**: Automatically enabled when the device is in **Battery Saver Mode** (except while charging).  
-- **Purpose**: Maximizes power efficiency for extended battery life. Limits non-essential component frequencies to their lowest OPP.
+- **Purpose**: Maximizes power efficiency for extended battery life, limits non-essential component frequencies to their lowest frequency.
 
-#### **Normal Profile**
+---
+
+#### Normal Profile
 - **Activation**: Applied when neither Performance nor Powersave conditions are met.  
 - **Purpose**: Allows the device to operate under default system behavior without any special tweaks.  
 

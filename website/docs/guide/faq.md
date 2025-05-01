@@ -26,12 +26,12 @@ Encore Tweaks offers a user-friendly WebUI for adjusting settings and preference
 Encore Tweaks automatically runs on boot, so you don't need to start it manually.
 
 ## Does Encore Tweaks require a BusyBox module?
-No, Encore Tweaks does not require the BusyBox module.
+No, Encore Tweaks does not require a BusyBox module.
 
 ## Why are some games randomly boosting even when they’re closed?
 Some games attend to run on background hence causing random boosts. to prevent random boosts, force stop the affected games and restrict them from running in the background. If needed, you can also remove them from gamelist.
 
-## How can I access Encore's WebUI?
+## How can I access WebUI?
 - **KernelSU or APatch Users**: Click "open" in the module card to access the WebUI.
 - **Magisk Users**: Native WebUI support isn't available in Magisk. Use [KSU WebUI APK](https://t.me/rem01schannel/636) or [MMRL](https://github.com/DerGoogler/MMRL) to access the WebUI if needed.
 
