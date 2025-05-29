@@ -30,7 +30,6 @@ abort_unsupported_arch() {
 	ui_print "*********************************************************"
 	ui_print "! Unsupported Architecture: $ARCH"
 	ui_print "! Your CPU architecture is not supported by Encore Tweaks."
-	ui_print "! If you believe this is an error, please report it to the maintainer."
 	abort "*********************************************************"
 }
 
@@ -70,13 +69,31 @@ soc_recognition_extra() {
 	return 1
 }
 
+get_soc_getprop() {
+	local SOC_PROP="
+ro.board.platform
+ro.soc.model
+ro.hardware
+ro.chipname
+ro.hardware.chipname
+ro.vendor.soc.model.external_name
+ro.vendor.qti.soc_name
+ro.vendor.soc.model.part_name
+ro.vendor.soc.model
+"
+
+	for prop in $SOC_PROP; do
+		getprop "$prop"
+	done
+}
+
 recognize_soc() {
 	case "$1" in
 	*mt* | *MT*) SOC=1 ;;
 	*sm* | *qcom* | *SM* | *QCOM* | *Qualcomm*) SOC=2 ;;
 	*exynos* | *Exynos* | *EXYNOS* | *universal* | *samsung* | *erd* | *s5e*) SOC=3 ;;
 	*Unisoc* | *unisoc* | *ums*) SOC=4 ;;
-	*gs*) SOC=5 ;;
+	*gs* | *Tensor* | *tensor*) SOC=5 ;;
 	*Intel* | *intel*) SOC=6 ;;
 	*kirin*) SOC=8 ;;
 	esac
@@ -104,7 +121,6 @@ source "$TMPDIR/verify.sh"
 ui_print "- Extracting module files"
 extract "$ZIPFILE" 'module.prop' "$MODPATH"
 extract "$ZIPFILE" 'service.sh' "$MODPATH"
-extract "$ZIPFILE" 'post-fs-data.sh' "$MODPATH"
 extract "$ZIPFILE" 'uninstall.sh' "$MODPATH"
 extract "$ZIPFILE" 'action.sh' "$MODPATH"
 extract "$ZIPFILE" 'system/bin/encore_profiler' "$MODPATH"
@@ -151,8 +167,9 @@ unzip -o "$ZIPFILE" "webroot/*" -d "$MODPATH" >&2
 # Set configs
 ui_print "- Encore Tweaks configuration setup"
 make_dir /data/encore
-make_node 0 /data/encore/kill_logd
+make_node 0 /data/encore/lite_mode
 make_node 0 /data/encore/dnd_gameplay
+make_node 0 /data/encore/device_mitigation
 [ ! -f /data/encore/ppm_policies_mediatek ] && echo 'PWR_THRO|THERMAL' >/data/encore/ppm_policies_mediatek
 [ ! -f /data/encore/gamelist.txt ] && extract "$ZIPFILE" 'gamelist.txt' "/data/encore"
 extract "$ZIPFILE" 'encore_logo.png' "/data/local/tmp"
@@ -174,9 +191,9 @@ set_perm_recursive "$MODPATH/system/bin" 0 0 0755 0755
 
 # Recognize Chipset
 soc_recognition_extra
-[ $SOC -eq 0 ] && recognize_soc "$(grep -E "Hardware|Processor" /proc/cpuinfo | uniq | cut -d ':' -f 2 | sed 's/^[ \t]*//')" # Try normal way
-[ $SOC -eq 0 ] && recognize_soc "$(grep "model\sname" /proc/cpuinfo | uniq | cut -d ':' -f 2 | sed 's/^[ \t]*//')"           # Try Intel (or X86) way
-[ $SOC -eq 0 ] && recognize_soc "$(getprop ro.board.platform) $(getprop ro.hardware) $(getprop ro.hardware.chipname)"        # Try Android way
+[ $SOC -eq 0 ] && recognize_soc "$(get_soc_getprop)"
+[ $SOC -eq 0 ] && recognize_soc "$(grep -E "Hardware|Processor" /proc/cpuinfo | uniq | cut -d ':' -f 2 | sed 's/^[ \t]*//')"
+[ $SOC -eq 0 ] && recognize_soc "$(grep "model\sname" /proc/cpuinfo | uniq | cut -d ':' -f 2 | sed 's/^[ \t]*//')"
 [ $SOC -eq 0 ] && {
 	ui_print "! Unknown SoC, skipping some tweaks"
 	ui_print "! If you think this is wrong, please report to maintainer"

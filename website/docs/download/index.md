@@ -3,19 +3,24 @@ title: "Download"
 description: "Download the latest version of Encore Tweaks Magisk Module here"
 ---
 
-# Encore Tweaks 4.1
+# Encore Tweaks 4.3
 
 ## Changelog
-- Fix CPU governor defaulted as performance
-- Fix overheating after startup
-- Expose game information through /dev/encore_game_info
-- Reintroduce cpu_dcvs tweaks (LLCC, L3 and DDR)
-- Add more TCP congestion algo to use
+
+- Introducing Lite Mode
+- Improve SoC recognition logic
+- Revert MTK PBM implementation due random reboot issue
+- Fix system instability in some Snapdragon devices
+- Fix SoC recognition on some Google Tensor devices
+- Fix Monet color theme in the latest MMRL build
+- Update default WebUI color theme to "purpleish"
+- Disable GED KPI on performance profile
+- Drop kill logger feature
 - Other misc changes and optimizations
 
 ## Download
-- [Download](https://github.com/Rem01Gaming/encore/releases/tag/4.1)
-- [Download (Alternative link)](https://dl.rem01gaming.dev/releases/encore/4.1/encore-4.1-862-cc92fbc-release.zip)
+- [Download](https://github.com/Rem01Gaming/encore/releases/tag/4.3)
+- [Download (Alternative link)](https://dl.rem01gaming.dev/releases/encore/4.3/encore-4.3-933-36f8bbc-release.zip)
 - [Telegram Channel](https://rem01schannel.t.me)
 
 ::: tip Support our project
@@ -23,6 +28,8 @@ Please consider support our project by not sharing direct module file
 :::
 
 ## Download older version
+- [Version 4.2](/download/version/4.2)
+- [Version 4.1](/download/version/4.1)
 - [Version 4.0](/download/version/4.0)
 - [Version 3.9](/download/version/3.9)
 - [Version 3.8](/download/version/3.8)
